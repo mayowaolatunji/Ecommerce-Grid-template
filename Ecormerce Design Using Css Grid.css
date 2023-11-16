@@ -5,15 +5,15 @@
     display:grid;
     text-align: center;
     padding: 5px;
-    grid-gap: 0.2rem;
+    position: absolute;
 
     grid-template-columns: 1fr 0.4fr;
-    grid-template-rows: 0.4fr 1fr 0.3fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
 
     grid-template-areas: 
     
     "nav nav"
-    "main cart"
+    "main main"
     "footer footer"
     ;
 
@@ -39,7 +39,15 @@ main{
     background: palevioletred;
 
     grid-area: cart;
+    position: absolute;
+    top: 19%;
+    right: 10px;
 
+    height: 470px;
+    width: 600px;
+
+/* display should be set to none and toggled on when a product is added to the cart */
+    display: none;
 }
 
 .footer{
