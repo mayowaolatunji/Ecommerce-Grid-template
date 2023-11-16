@@ -1,0 +1,52 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display:grid;
+    text-align: center;
+    padding: 5px;
+    grid-gap: 0.2rem;
+
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 0.4fr 1fr 0.3fr;
+
+    grid-template-areas: 
+    
+    "nav nav"
+    "main cart"
+    "footer footer"
+    ;
+
+}
+
+nav{
+    color: white;
+    background: gray;
+
+    grid-area: nav;
+}
+
+main{
+    color: white;
+    background: rgb(127, 46, 46);
+
+    grid-area: main;
+
+}
+
+.cart{
+    color: white;
+    background: palevioletred;
+
+    grid-area: cart;
+
+}
+
+.footer{
+    color: white;
+    background: rgb(124, 12, 49);
+
+    grid-area: footer;
+
+}
+
